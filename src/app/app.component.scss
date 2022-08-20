@@ -1,0 +1,17 @@
+.outlet-container {
+    position: relative;
+    float: right;
+    width: calc(100% - 260px);
+    height: calc(100% - 70px);
+    top: 70px;
+}
+.outlet-container-without-sidebar {
+    position: relative;
+    float: right;
+    width: calc(100%);
+    height: calc(100% - 70px);
+    top: 70px;
+}
+.outlet-bg{
+    background: #DBF5F0;
+}

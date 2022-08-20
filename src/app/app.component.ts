@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  state: 'in' | 'out' = 'in';
   title = 'ngx-together';
 }

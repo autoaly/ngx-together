@@ -1,1 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@include mat.core();
+
+
+$angular-primary: mat.define-palette(mat.$teal-palette, 500, 100, 900);
+$angular-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$angular-warn: mat.define-palette(mat.$red-palette);
+
+$angular-default-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $angular-primary,
+      accent: $angular-accent,
+      warn: $angular-warn,
+    ),
+  )
+);
+
+$digital-color-primary: #193d3c;
+$digital-color-menu: rgb(82, 18, 98);
+$digital-color-btn-border: #75e6da;
+$digital-color-primary-text: #dbf5f0;
+$digital-color-light: #dbf5f0;
+$digital-color-dark: #056360;
+$digital-color-secondry: #a4e5e0;
+
+@include mat.all-component-themes($angular-default-theme);
+$angular-dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $angular-primary,
+      accent: $angular-accent,
+      warn: $angular-warn,
+    ),
+  )
+);
+
+.darkMode {
+  @include mat.all-component-colors($angular-dark-theme);
+}
+
+.flag-img {
+  max-width: 30px !important;
+  max-height: 30px !important;
+  margin: 5px;
+
+  cursor: pointer;
+}
+.cdk-overlay-container {
+  z-index: 1031 !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.bg-digital {
+
+    // background-color: rgb(82, 18, 98);
+  --bs-bg-opacity: 1;
+  background-color: $digital-color-menu !important;
+  color: $digital-color-primary-text;
+  .mat-list-base .mat-list-item {
+    color: #fff;
+  }
+}
+.bg-digital-sidebar {
+  --bs-bg-opacity: 1;
+  color: $digital-color-primary-text;
+  // background-color: $digital-color-dark !important;
+  // background: linear-gradient(0deg, rgba(91,232,233,1) 0%, rgba(57,195,195,1) 24%, rgba(22,161,160,1) 49%, rgba(10,135,127,1) 89%);
+  background: $digital-color-menu;
+}
+.logo{
+    max-height: 55px;
+    
+}
+
+.mat-list-base .mat-list-item{
+    color: inherit;
+}
