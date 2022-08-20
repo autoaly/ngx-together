@@ -1,0 +1,22 @@
+<mat-form-field [appearance]="appearance">
+    <mat-label>{{placeholder|lang}} {{isRequired ? ' *' : ''}}</mat-label>
+    <input
+        matInput
+        type="{{type}}"
+        style="direction: initial !important;"
+        data-id="{{getControlName()}}"
+        (blur)="onBlur($event)"
+        [formControl]="controller"
+        [formControlName]="controllerName"
+        [patterns]="customPatterns"
+        [mask]="mask"
+        [min]="min"
+        [max]="max"
+        [prefix]="prefix ? prefix :''"
+        [placeHolderCharacter]="placeHolderCharacter ? placeHolderCharacter :'_'"
+        [showMaskTyped]="mask ? true : false"
+        placeholder="{{placeholder | lang}} {{isRequired ? ' *' : ''}}"
+        [attr.disabled]="!!disabled ? true : null"
+        autocomplete="{{ !!hasAutoComplete ? 'on' : 'off' }}"/>
+        <mat-error *ngIf="controller?.errors">{{controller?.errors | validation}}</mat-error>
+</mat-form-field>

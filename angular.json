@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "ngx-together",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -102,6 +102,133 @@
           }
         }
       }
+    },
+    "ngxTogetherInput": {
+      "projectType": "library",
+      "root": "projects/ngx-together-input",
+      "sourceRoot": "projects/ngx-together-input/src",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-together-input/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-together-input/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-together-input/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-together-input/src/test.ts",
+            "tsConfig": "projects/ngx-together-input/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-together-input/karma.conf.js"
+          }
+        }
+      }
+    },
+    "ngxTogetherBasicComponent": {
+      "projectType": "library",
+      "root": "projects/ngx-together-basic-component",
+      "sourceRoot": "projects/ngx-together-basic-component/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-together-basic-component/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-together-basic-component/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-together-basic-component/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-together-basic-component/src/test.ts",
+            "tsConfig": "projects/ngx-together-basic-component/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-together-basic-component/karma.conf.js"
+          }
+        }
+      }
+    },
+    "ngx-together-label": {
+      "projectType": "library",
+      "root": "projects/ngx-together-label",
+      "sourceRoot": "projects/ngx-together-label/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-together-label/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-together-label/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-together-label/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-together-label/src/test.ts",
+            "tsConfig": "projects/ngx-together-label/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-together-label/karma.conf.js"
+          }
+        }
+      }
+    },
+    "ngx-together-translator": {
+      "projectType": "library",
+      "root": "projects/ngx-together-translator",
+      "sourceRoot": "projects/ngx-together-translator/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-together-translator/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-together-translator/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-together-translator/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-together-translator/src/test.ts",
+            "tsConfig": "projects/ngx-together-translator/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-together-translator/karma.conf.js"
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "analytics": "346845a4-a574-45eb-8b6c-8ee0309d31f3"
   }
 }

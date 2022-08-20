@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build-basics": "ng build ngx-together-translator && ng build ngx-together-label && ng build ngxTogetherBasicComponent && ng build ngxTogetherInput"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +34,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^14.0.0",
     "typescript": "~4.7.2"
   }
 }

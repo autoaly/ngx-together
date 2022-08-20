@@ -11,6 +11,20 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "ngx-together-label": [
+        "dist/ngx-together-label"
+      ],
+      "ngx-together-translator": [
+        "dist/ngx-together-translator"
+      ],
+      "ngxTogetherBasicComponent": [
+        "dist/ngx-together-basic-component"
+      ],
+      "ngxTogetherInput": [
+        "dist/ngx-together-input"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
