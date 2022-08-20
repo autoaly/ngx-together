@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
-    "@angular/core": "^14.0.0"
+    "@angular/core": "^14.0.0",
+    "@angular/material": "^14.1.3",
+    "ngx-mask": "^14.0.3",
+    "ngx-together-translator": "^0.0.1",
+    "ngx-together-basic-component": "^0.0.1"
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  },
-  "devDependencies": {
-    "@angular/material": "^14.1.3",
-    "ngx-mask": "^14.0.3"
   }
 }

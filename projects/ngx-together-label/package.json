@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
-    "@angular/core": "^14.0.0"
+    "@angular/core": "^14.0.0",
+    "ngx-together-translator": "^0.0.1"
   },
-  "dependencies": {
+  "dependencies": {    
     "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    
   }
 }
