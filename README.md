@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-run `npm run build-basics` for building basic libraries then run serve command
+Run `npm run build-basics` for building basic libraries then run serve command
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
@@ -15,10 +15,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build ngx-together-translator ` for build library. The build artifacts will be stored in the `dist/` directory. 
-Run `ng build ngx-together-label ` for build library. The build artifacts will be stored in the `dist/` directory. 
-Run `ng build ngxTogetherBasicComponent ` for build library. The build artifacts will be stored in the `dist/` directory. 
-Run `ng build ngxTogetherInput` for build library. The build artifacts will be stored in the `dist/` directory. 
+Run `ng build ngx-together-translator ` for build library. The build artifacts will be stored in the `ngx-together-translator/dist/` directory. 
+Run `ng build ngx-together-label ` for build library. The build artifacts will be stored in the `ngx-together-label/dist/` directory. 
+Run `ng build ngxTogetherBasicComponent ` for build library. The build artifacts will be stored in the `project/ngx-together-basic-component/dist/` directory. 
+Run `ng build ngxTogetherInput` for build library. The build artifacts will be stored in the `project/ngx-together-input/dist/` directory. 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
