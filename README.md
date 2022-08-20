@@ -15,11 +15,19 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+### Build translator
 Run `ng build ngx-together-translator ` for build library. The build artifacts will be stored in the `ngx-together-translator/dist/` directory. 
+
+### Build label
 Run `ng build ngx-together-label ` for build library. The build artifacts will be stored in the `ngx-together-label/dist/` directory. 
+
+### Build BasicComponent
 Run `ng build ngxTogetherBasicComponent ` for build library. The build artifacts will be stored in the `project/ngx-together-basic-component/dist/` directory. 
+
+### Build Input
 Run `ng build ngxTogetherInput` for build library. The build artifacts will be stored in the `project/ngx-together-input/dist/` directory. 
 
+### Build Main Project
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
