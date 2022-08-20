@@ -2,6 +2,7 @@ import { ChangeDetectorRef, Component, Input, OnInit, ViewChild } from '@angular
 import { MediaMatcher } from '@angular/cdk/layout';
 import { MatSidenav } from '@angular/material/sidenav';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { SideMenuItems } from 'src/app/models/side-menu.model';
 @Component({
   selector: 'app-side-navbarmenu',
   templateUrl: './mindx-side-navbarmenu.component.html',
@@ -24,7 +25,11 @@ export class SideNavbarmenuComponent implements OnInit {
 
   @ViewChild('snav') snav!: MatSidenav;
   mobileQuery!: MediaQueryList;
-  fillerNav = ["x1", "x2", "x3", "x4"];
+  fillerNav : SideMenuItems[] = [{
+    title:'Inputs',
+    url : '/inputs',
+    icon:'fa-solid fa-input-text'
+  }];
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
