@@ -2,9 +2,10 @@
 <app-side-navbarmenu #sideNaveMenu
   [class.d-none]="state=='out'"></app-side-navbarmenu>
 <div class="outlet-bg"
+  [ngStyle]="style"
   [class.outlet-container]="state == 'in'"
   [class.outlet-container-without-sidebar]="state == 'out'">
-  <div class="container-fluid">
+  <div class="container-fluid m-2">
     <router-outlet></router-outlet>
   </div>
 </div>

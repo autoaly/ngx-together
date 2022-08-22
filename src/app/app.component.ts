@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Utility } from './utility/utility';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   state: 'in' | 'out' = 'in';
   title = 'ngx-together';
+
+  get style() {
+    return { direction: `${Utility.isRtl() ? 'rtl' : 'ltr'}` };
+  }
+
 }
