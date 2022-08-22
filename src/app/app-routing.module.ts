@@ -10,6 +10,11 @@ const routes: Routes = [
     path: 'translator',
     loadChildren: () => import('./demo/together-translation/together-translation.module').then(m => m.TogetherTranslationModule)
   }
+  ,
+  {
+    path: 'button',
+    loadChildren: () => import('./demo/together-button-samples/together-button-samples.module').then(m => m.TogetherButtonSamplesModule)
+  }
 ];
 
 @NgModule({

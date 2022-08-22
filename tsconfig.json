@@ -12,6 +12,9 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
+      "ngx-together-button": [
+        "dist/ngx-together-button"
+      ],
       "ngx-together-label": [
         "dist/ngx-together-label"
       ],

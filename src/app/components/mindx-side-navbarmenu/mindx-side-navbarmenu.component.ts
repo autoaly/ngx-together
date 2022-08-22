@@ -35,7 +35,14 @@ export class SideNavbarmenuComponent implements OnInit {
       title: 'Inputs',
       url: '/inputs',
       icon: 'fa-solid fa-keyboard'
-    }];
+    }
+    ,
+    {
+      title: 'Buttons',
+      url: '/button',
+      icon: 'fa-solid fa-button'
+    }
+  ];
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
