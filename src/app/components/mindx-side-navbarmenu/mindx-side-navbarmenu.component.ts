@@ -26,11 +26,11 @@ export class SideNavbarmenuComponent implements OnInit {
   @ViewChild('snav') snav!: MatSidenav;
   mobileQuery!: MediaQueryList;
   fillerNav: SideMenuItems[] = [
-      // {
-      //   title: 'Translator',
-      //   url: '/translator',
-      //   icon: 'fa-solid fa-language'
-      // },
+    {
+      title: 'Translator',
+      url: '/translator',
+      icon: 'fa-solid fa-language'
+    },
     {
       title: 'Inputs',
       url: '/inputs',

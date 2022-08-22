@@ -1,13 +1,18 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Inject, InjectionToken, Pipe, PipeTransform } from '@angular/core';
 import { LanguageFile } from './files/language';
+import { LANGUAGE_TRANSLATOR } from './ngx-together-translator.service';
+
+
 
 @Pipe({
   name: 'lang'
 })
 export class NgxTogetherLanguageTranslatorPipe implements PipeTransform {
-  language: any;
-  constructor() {
-    this.language = LanguageFile.language;
+
+
+  constructor(@Inject(LANGUAGE_TRANSLATOR) private language?: any) {
+    if (!language)
+      language = LanguageFile.language;
   }
   transform(value: string, falg = "fa"): string {
     if (typeof (value) != typeof ('x1'))
