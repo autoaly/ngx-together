@@ -1,24 +1,14 @@
 # NgxTogetherInput
+The sources for this package are in the main  repo. Please file issues and pull requests against that repo.
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
 
-## Code scaffolding
+## Why to use
 
-Run `ng generate component component-name --project ngxTogetherInput` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngxTogetherInput`.
-> Note: Don't forget to add `--project ngxTogetherInput` or else it will be added to the default project in your `angular.json` file. 
+this package is build to help your coding. its build with angular material
+and most advantage is using ngx-together-translator , it means every label or tips or placeholders will translate when you use this package
 
-## Build
+## Installation
 
-Run `ng build ngxTogetherInput` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ngxTogetherInput`, go to the dist folder `cd dist/ngx-together-input` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngxTogetherInput` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+first you have to add Angular Material to your project
+dont forget to add  styles

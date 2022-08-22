@@ -1,9 +1,10 @@
 <ngx-together-top-navbar [(state)]="state"></ngx-together-top-navbar>
-<app-side-navbarmenu #sideNaveMenu [class.d-none]="state=='out'"></app-side-navbarmenu>
-<div class="outlet-bg" [class.outlet-container]="state == 'in'"
-  [class.outlet-container-without-sidebar]="state == 'out'">  
-  <div>
-  {{state}}{{'  tets'}}
-</div>
-<router-outlet></router-outlet>
+<app-side-navbarmenu #sideNaveMenu
+  [class.d-none]="state=='out'"></app-side-navbarmenu>
+<div class="outlet-bg"
+  [class.outlet-container]="state == 'in'"
+  [class.outlet-container-without-sidebar]="state == 'out'">
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
 </div>

@@ -1,0 +1,24 @@
+:host {
+    svg {
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+    }
+
+    .hintLabel {
+        font-size: x-small;
+        margin-left: 5px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+    .mat-form-field-flex {
+        .mat-form-field-infix {
+            padding: inherit !important;
+        }
+    }
+    .mat-form-field{
+        width: 100%;
+    }
+}

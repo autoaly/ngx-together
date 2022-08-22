@@ -1,1 +1,91 @@
-<p>together-input-samples works!</p>
+<h3 class="mt-3">
+    <ngx-together-label label="Type of Inputs"></ngx-together-label>
+</h3>
+<hr>
+<div class="row">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+
+        <ngx-together-input             
+            [controller]="getCtrl('name')">
+        </ngx-together-input>
+
+
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+
+        <ngx-together-input label="outline"
+            appearance="outline"
+            [controller]="getCtrl('name')">
+        </ngx-together-input>
+
+
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-input label="legacy"
+            appearance="legacy"
+            [controller]="getCtrl('name')">
+        </ngx-together-input>
+
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-input label="standard"
+            appearance="standard"
+            [controller]="getCtrl('name')">
+        </ngx-together-input>
+
+
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-input label="fill"
+            appearance="fill"
+            [controller]="getCtrl('name')">
+        </ngx-together-input>
+    </div>
+</div>
+<h3 class="mt-3">
+    <ngx-together-label label="Tips and Validation"></ngx-together-label>
+</h3>
+<hr>
+<div class="row">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-input label="Name"
+            tip="this is a tip to  help user"
+            [controller]="getCtrl('name')">
+        </ngx-together-input>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-input label="family"
+            tip=" required field"
+            [controller]="getCtrl('family')">
+        </ngx-together-input>
+    </div>
+</div>
+<h3 class="mt-3">
+    <ngx-together-label label="Mask"></ngx-together-label>
+</h3>
+<hr>
+<div class="row">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-input label="Name"
+            tip="using mask"
+            mask="(000) 000-0000"
+            [controller]="getCtrl('name')">
+        </ngx-together-input>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-input label="Name"
+            tip="using mask"
+            mask="00/00/0000"
+            [controller]="getCtrl('name')">
+        </ngx-together-input>
+    </div>
+</div>
+<div class="row">
+
+    <p>
+        <ngx-together-label label="for more masks visit :"></ngx-together-label>
+        <a href="        https://jsdaddy.github.io/ngx-mask-page/main" target="_blank">https://jsdaddy.github.io/ngx-mask-page/main</a> 
+
+    </p>
+
+</div>

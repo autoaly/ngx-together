@@ -6,6 +6,8 @@ import { NgxTogetherLanguageTranslatorPipe, NgxTogetherTranslatorModule } from '
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxMaskModule, IConfig } from 'ngx-mask'
 import { NgxTogetherBasicComponentModule, ValidationTranslatorPipe } from 'ngxTogetherBasicComponent';
+import { CommonModule } from '@angular/common';
+import { MatInputModule } from '@angular/material/input';
 
 const maskConfig: Partial<IConfig> = {
   validation: false,
@@ -18,18 +20,20 @@ const maskConfig: Partial<IConfig> = {
   ],
   imports: [
     MatFormFieldModule,
+    MatInputModule,
     NgxTogetherLabelModule,
     NgxTogetherTranslatorModule,
     NgxMaskModule.forRoot(maskConfig),
     ReactiveFormsModule,
-    NgxTogetherBasicComponentModule
+    NgxTogetherBasicComponentModule,
+    CommonModule
   ],
   exports: [
     NgxTogetherInputComponent
   ],
   providers: [
     NgxTogetherLanguageTranslatorPipe,
-    ValidationTranslatorPipe
+    ValidationTranslatorPipe,
   ]
 })
 export class NgxTogetherInputModule { }
