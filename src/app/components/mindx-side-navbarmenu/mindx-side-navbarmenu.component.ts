@@ -21,15 +21,21 @@ import { SideMenuItems } from 'src/app/models/side-menu.model';
   ]
 })
 export class SideNavbarmenuComponent implements OnInit {
-  @Input() public menuState:'in' | 'out' = 'in';
+  @Input() public menuState: 'in' | 'out' = 'in';
 
   @ViewChild('snav') snav!: MatSidenav;
   mobileQuery!: MediaQueryList;
-  fillerNav : SideMenuItems[] = [{
-    title:'Inputs',
-    url : '/inputs',
-    icon:'fa-solid fa-input-text'
-  }];
+  fillerNav: SideMenuItems[] = [
+      // {
+      //   title: 'Translator',
+      //   url: '/translator',
+      //   icon: 'fa-solid fa-language'
+      // },
+    {
+      title: 'Inputs',
+      url: '/inputs',
+      icon: 'fa-solid fa-keyboard'
+    }];
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
@@ -47,8 +53,8 @@ export class SideNavbarmenuComponent implements OnInit {
   toggle() {
     this.snav.toggle();
   }
-  
-  toggleMenu(){
+
+  toggleMenu() {
     this.menuState = this.menuState === 'out' ? 'in' : 'out';
   }
 }

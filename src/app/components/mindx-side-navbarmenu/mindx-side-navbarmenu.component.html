@@ -13,8 +13,9 @@
             <a mat-list-item
                 [routerLink]="nav.url"
                 *ngFor="let nav of fillerNav">
-                <i [class]="nav.icon"></i>
-                <ngx-together-label [label]="nav.title"></ngx-together-label>
+                <i [class]="nav.icon" ></i>
+                &nbsp;
+                <ngx-together-label  [label]="nav.title"></ngx-together-label>
             </a>
         </mat-nav-list>
 

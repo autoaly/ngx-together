@@ -4,7 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'inputs',
-    loadChildren: () => import('./together-input-samples/together-input-samples.module').then(m => m.TogetherInputSamplesModule)
+    loadChildren: () => import('./demo/together-input-samples/together-input-samples.module').then(m => m.TogetherInputSamplesModule)
+  },
+  {
+    path: 'translator',
+    loadChildren: () => import('./demo/together-translation/together-translation.module').then(m => m.TogetherTranslationModule)
   }
 ];
 
