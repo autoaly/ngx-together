@@ -5,10 +5,9 @@ import { NgxTogetherBasicComponentComponent } from 'ngxTogetherBasicComponent';
 @Component({
   selector: 'ngx-together-input',
   templateUrl: './ngx-together-input.component.html',
-  styles: [
-  ]
+  styleUrls: ['./ngx-together-input.component.scss']
 })
-export class NgxTogetherInputComponent  extends NgxTogetherBasicComponentComponent implements OnInit {
+export class NgxTogetherInputComponent extends NgxTogetherBasicComponentComponent implements OnInit {
   @Output() blur: EventEmitter<any> = new EventEmitter<any>();
   @Input() iconClassName = '';
 

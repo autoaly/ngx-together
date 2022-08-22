@@ -113,6 +113,14 @@ export class LanguageFile {
     "addnewlayer": { "fa": "لایه جدید", "en": "Add New Layer" },
     "hideotherlayers": { "fa": "مخفی کردن سایر لایه ها", "en": "Hide Other Layers" },
     "y": { "fa": "Y", "en": "Y" },
+    "legacy": { "fa": "لگاسی", "en": "Legacy" },
+    "standard": { "fa": "استاندارد", "en": "Standard" },
+    "fill": { "fa": "پر شده", "en": "Fill" },
+    "outline": { "fa": "با خطوط حاشیه", "en": "Outline" },
+    "tips and validation": { "fa": "توصیه ها و بررسی ها", "en": "Tips and Validation" },
+    "mask": { "fa": "روکش", "en": "mask" },
+    "for more masks visit :": { "fa": "برای روکش های بیشتر برید به :", "en": "for more masks visit :" },
+    "type of inputs": { "fa": "انواع مختلف", "en": "Type of Inputs" },
 
   };
 }

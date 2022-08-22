@@ -1,0 +1,24 @@
+<div class="example-container bg-digital-sidebar"
+    [class.example-is-mobile]="mobileQuery.matches">
+
+
+    <mat-sidenav-container class="example-sidenav-container bg-digital-sidebar"
+        [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+        <mat-sidenav #snav
+            [mode]="mobileQuery.matches ? 'over' : 'side'"
+            [fixedInViewport]="mobileQuery.matches"
+            fixedTopGap="56">
+        </mat-sidenav>
+        <mat-nav-list>
+            <a mat-list-item
+                [routerLink]="nav.url"
+                *ngFor="let nav of fillerNav">
+                <i [class]="nav.icon" ></i>
+                &nbsp;
+                <ngx-together-label  [label]="nav.title"></ngx-together-label>
+            </a>
+        </mat-nav-list>
+
+
+    </mat-sidenav-container>
+</div>

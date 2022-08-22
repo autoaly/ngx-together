@@ -1,0 +1,107 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-digital nav-bottom-border">
+    <div class="container-fluid">
+        <a href="#"
+            class="navbar-brand">
+            <!-- <img src="/assets/logo/logo.svg"
+                height="45"
+                alt="together"> -->
+            <img class="logo"
+                [src]="logoSrc"
+                alt="together">
+
+        </a>
+
+        <button type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+            id="navbarCollapse">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link cursor-pointer">
+                    <i class="fas fa-list-ul fa-2x"
+                        (click)="clickOnToggle()">
+                    </i>
+                </a>
+                <a class="nav-item nav-link "
+                    (click)="activeMenu = 'home'"
+                    [class.active]="activeMenu == 'home'"
+                    [routerLink]="['']">
+                    <i class="fas fa-home"></i>
+                    &nbsp;
+                    <ngx-together-label label="Home"></ngx-together-label>
+                </a>
+                <!-- <a class="nav-item nav-link "
+                    (click)="activeMenu = 'designMode'"
+                    [class.active]="activeMenu == 'designMode'"
+                    [routerLink]="['/design']"><i class="fas fa-drafting-compass"></i>
+                    &nbsp;
+                    <ngx-together-label label="Design Mode"></ngx-together-label>
+                </a>
+                <a class="nav-item nav-link "
+                    (click)="activeMenu = 'runMode'"
+                    [class.active]="activeMenu == 'runMode'"
+                    [routerLink]="['/run']"><i class="fas fa-play-circle"></i>
+                    &nbsp;
+                    <ngx-together-label label="Run Mode"></ngx-together-label>
+                </a> -->
+            </div>
+            <div class="navbar-nav ms-auto">
+                <a href="#"
+                    class="nav-item nav-link m-auto">
+                    <ngx-together-label label="Sign In"
+                        *ngIf="!profile.email"></ngx-together-label>
+                    <label *ngIf="profile.email">
+
+                        {{profile.email}}
+                    </label>
+
+                    &nbsp;
+                    <i class="fas fa-sign-in-alt "
+                        *ngIf="!profile.email"></i>
+                    <i class="fas fa-sign-out-alt "
+                        (click)="logout()"
+                        *ngIf="!!profile.email"></i>
+                </a>
+                <span class="m-auto cursor-pointer"
+                    [matMenuTriggerFor]="flagsMenu">
+                    <img class="min-h-25"
+                        [src]="selectedLngSrc" />
+                </span>
+                <a href="#"
+                    class="nav-item nav-link ">
+                    <i class="far fa-user-circle fa-2x"
+                        *ngIf="!profile.avatar"></i>
+                    <img class="img-circle min-h-25"
+                        *ngIf="!!profile.avatar"
+                        [src]="profile.avatar">
+                </a>
+                <mat-menu #flagsMenu="matMenu"
+                    class="bg-dark text-light bg-digital-sidebar">
+                    <ul class="list-group">
+                        <li class="ist-group-item cursor-pointer"
+                            (click)="setLanguage('en')">
+                            <img class="flag-img "
+                                [src]="engSrc"
+                                alt="English">
+                            <span>English</span>
+
+                        </li>
+                        <hr>
+                        <li class="ist-group-item cursor-pointer"
+                            (click)="setLanguage('fa')">
+                            <img class="flag-img "
+                                [src]="faSrc"
+                                alt="فارسی">
+                            <span>فارسی</span>
+                        </li>
+
+                    </ul>
+                </mat-menu>
+
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,1 +1,64 @@
+
 /* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
+@include mat.core();
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
+$digital-color-menu: rgb(82, 18, 98);
+$color-primary-text: #dbf5f0;
+
+
+
+tml,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+.flag-img {
+  max-width: 30px !important;
+  max-height: 30px !important;
+  margin: 5px;
+
+  cursor: pointer;
+}
+.cdk-overlay-container {
+  z-index: 1031 !important;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.bg-digital {
+
+
+  background-color: $digital-color-menu !important;
+  color: $color-primary-text;
+  .mat-list-base .mat-list-item {
+    color: #fff;
+  }
+}
+.bg-digital-sidebar {
+  --bs-bg-opacity: 1;
+  color: $color-primary-text;
+  background: $digital-color-menu;
+}
+.logo{
+    max-height: 55px;
+    
+}
+
+.mat-list-base .mat-list-item{
+    color: inherit;
+}

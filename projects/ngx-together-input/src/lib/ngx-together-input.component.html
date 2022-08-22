@@ -1,13 +1,25 @@
+<div *ngIf="label"
+    class="mb-1 ">
+    <ngx-together-label [label]="label "
+        class="bold-font"></ngx-together-label>
+    <ngx-together-label class="text-danger bold-font"
+        *ngIf="label"
+        [label]="isRequired ? ' *' : ''">
+    </ngx-together-label>
+</div>
+<div>
+    <small class="text-secondary"
+        *ngIf="tip">{{tip | lang}}</small>
+</div>
+
 <mat-form-field [appearance]="appearance">
-    <mat-label>{{placeholder|lang}} {{isRequired ? ' *' : ''}}</mat-label>
-    <input
-        matInput
+    <mat-label *ngIf="!label">{{(label || placeholder) | lang}} {{isRequired ? ' *' : ''}}</mat-label>
+    <input matInput
         type="{{type}}"
         style="direction: initial !important;"
         data-id="{{getControlName()}}"
         (blur)="onBlur($event)"
         [formControl]="controller"
-        [formControlName]="controllerName"
         [patterns]="customPatterns"
         [mask]="mask"
         [min]="min"
@@ -15,8 +27,8 @@
         [prefix]="prefix ? prefix :''"
         [placeHolderCharacter]="placeHolderCharacter ? placeHolderCharacter :'_'"
         [showMaskTyped]="mask ? true : false"
-        placeholder="{{placeholder | lang}} {{isRequired ? ' *' : ''}}"
+        placeholder="{{placeholder | lang}}"
         [attr.disabled]="!!disabled ? true : null"
-        autocomplete="{{ !!hasAutoComplete ? 'on' : 'off' }}"/>
-        <mat-error *ngIf="controller?.errors">{{controller?.errors | validation}}</mat-error>
+        autocomplete="{{ !!hasAutoComplete ? 'on' : 'off' }}" />
+    <mat-error *ngIf="controller?.errors">{{controller?.errors | validation}}</mat-error>
 </mat-form-field>
