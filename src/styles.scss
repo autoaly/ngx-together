@@ -8,6 +8,10 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
+@import url('https://fonts.googleapis.com/css?family=Vazirmatn&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vazirmatn&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 
 $digital-color-menu: rgb(82, 18, 98);
 $color-primary-text: #dbf5f0;
@@ -16,6 +20,7 @@ $color-primary-text: #dbf5f0;
 
 tml,
 body {
+  font-family: Vazirmatn,inter;
   height: 100%;
   box-sizing: border-box;
 }
