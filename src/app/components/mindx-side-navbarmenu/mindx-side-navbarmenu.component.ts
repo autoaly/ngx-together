@@ -42,6 +42,12 @@ export class SideNavbarmenuComponent implements OnInit {
       url: '/button',
       icon: 'fa-solid fa-stop'
     }
+    ,
+    {
+      title: 'Dates',
+      url: '/date',
+      icon: 'fa-solid fa-calendar'
+    }
   ];
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {

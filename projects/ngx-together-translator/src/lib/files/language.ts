@@ -137,6 +137,23 @@ export class LanguageFile {
     "buttons": { "fa": "دکمه", "en": "Button" },
     "inputs": { "fa": "ورودی متن(Input Text)", "en": "Input Text" },
     "translator": { "fa": "مترجم", "en": "Translator" },
+    "appearance of dates": { "fa": "انواع ظاهر", "en": "Appearance of Dates" },
+    "appearance of inputs": { "fa": "انواع ظاهر", "en": "Appearance of Inputs" },
+    "this is a tip to  help user": { "fa": "متن نمونه جهت راهنمایی کاربر", "en": "This is a tip to  help user" },
+    "family": { "fa": "نام خانوادگی", "en": "family" },
+    "required": { "fa": "اجباری", "en": "required" },
+    "required field": { "fa": "فیلد اجباری", "en": "required field" },
+    "this field is required": { "fa": "این فیلد اجباری می باشد", "en": "this field is required" },
+    "you cant insert negative numbers": { "fa": "عدد منفی غیر مجاز است", "en": "you cant insert negative numbers" },
+    "you have to insert only English characters": { "fa": "فقط از کاراکتر های انگلیسی استفاده کنید", "en": "you have to insert only English characters" },
+    "not valid English name": { "fa": "نام انگلیسی معتبر نیست", "en": "not valid English name" },
+    "you have to insert only numbers": { "fa": "فقط مجاز به درج عدد میباشید", "en": "you have to insert only numbers" },
+    "you have to select future date": { "fa": "تاریخی در آینده انتخاب کنید", "en": "you have to select future date" },
+    "you have to select past date": { "fa": "تاریخی در گذشته انتخاب کنید", "en": "you have to select past date" },
+    "inserted value does not match to pattern": { "fa": "مقدار وارد شده با الگو همخوانی ندارد", "en": "inserted value does not match to pattern" },
+    "you have to select item from list": { "fa": "گزینه ای از لیست انتخاب کنید", "en": "you have to select item from list" },
+    "there is no item in list to select": { "fa": "لیست خالی میباشد", "en": "there is no item in list to select" },
+    "dates": { "fa": "تاریخ", "en": "Dates" },
 
   };
 }

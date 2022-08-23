@@ -17,8 +17,6 @@ export class NgxTogetherInputComponent extends NgxTogetherBasicComponentComponen
   @Input()
   placeholder = '';
 
-  @Input()
-  tip: string = ''
 
   @Input()
   hintLabel = '';

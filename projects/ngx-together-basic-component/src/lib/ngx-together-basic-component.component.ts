@@ -33,6 +33,10 @@ export class NgxTogetherBasicComponentComponent implements OnInit {
   @Input()
   showValidationMessage: boolean = false;
 
+
+  @Input()
+  tip: string = ''
+
   private _disabled!: boolean;
 
   public get disabled(): any {

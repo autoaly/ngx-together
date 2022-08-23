@@ -1,0 +1,26 @@
+<div class="mb-1">
+    <ngx-together-label [label]="label || placeholder"
+        class="bold-font"></ngx-together-label>
+    <ngx-together-label class="text-danger bold-font"
+        [label]="isRequired ? ' *' : ''"></ngx-together-label>
+</div>
+<div>
+    <small class="text-secondary"
+        *ngIf="tip">{{tip | lang}}</small>
+</div>
+
+<mat-form-field [appearance]="appearance">
+    <mat-label *ngIf="!label">{{(label || placeholder) | lang}} {{isRequired ? ' *' : ''}}</mat-label>
+    <input [formControl]="controller"
+        matInput
+        placeholder="{{ (placeholder || label) | lang }}"
+        [min]="minDate"
+        [max]="maxDate"
+        [disabled]="!!disabled ? true : false"
+        [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix
+        [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <mat-error *ngIf="controller?.errors">{{controller?.errors | validation}}
+    </mat-error>
+</mat-form-field>

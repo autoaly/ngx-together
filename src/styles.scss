@@ -67,3 +67,10 @@ body {
 .mat-list-base .mat-list-item{
     color: inherit;
 }
+.mat-list-item {
+  font-family: inherit;
+}
+
+::placeholder{
+  font-family: inherit;
+}

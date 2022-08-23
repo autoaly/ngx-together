@@ -15,6 +15,9 @@
       "ngx-together-button": [
         "dist/ngx-together-button"
       ],
+      "ngx-together-date": [
+        "dist/ngx-together-date"
+      ],
       "ngx-together-label": [
         "dist/ngx-together-label"
       ],
