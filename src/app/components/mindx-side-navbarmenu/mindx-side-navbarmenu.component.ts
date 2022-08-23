@@ -40,7 +40,7 @@ export class SideNavbarmenuComponent implements OnInit {
     {
       title: 'Buttons',
       url: '/button',
-      icon: 'fa-solid fa-button'
+      icon: 'fa-solid fa-stop'
     }
   ];
 

@@ -48,7 +48,10 @@
                     <ngx-together-label label="Run Mode"></ngx-together-label>
                 </a> -->
             </div>
-            <div class="navbar-nav ms-auto">
+            <div class="navbar-nav " 
+            [class.ms-auto]="!isRtl()"
+            [class.me-auto]="!!isRtl()"
+            >
                 <a href="#"
                     class="nav-item nav-link m-auto">
                     <ngx-together-label label="Sign In"

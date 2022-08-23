@@ -1,8 +1,11 @@
+
 <ngx-together-top-navbar [(state)]="state"></ngx-together-top-navbar>
 <app-side-navbarmenu #sideNaveMenu
   [class.d-none]="state=='out'"></app-side-navbarmenu>
-<div class="outlet-bg"
+<div class="outlet-bg "
   [ngStyle]="style"
+  [class.float-dir-left]="!!isRtl()"
+  [class.float-dir-right]="!isRtl()"
   [class.outlet-container]="state == 'in'"
   [class.outlet-container-without-sidebar]="state == 'out'">
   <div class="container-fluid ">

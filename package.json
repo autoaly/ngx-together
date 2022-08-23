@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build-basics": "ng build ngx-together-translator && ng build ngx-together-label && ng build ngxTogetherBasicComponent && ng build ngxTogetherInput"
+    "build-basics": "ng build ngx-together-translator && ng build ngx-together-label && ng build ngxTogetherBasicComponent && ng build ngxTogetherInput && ng build ngx-together-button"
   },
   "private": true,
   "dependencies": {

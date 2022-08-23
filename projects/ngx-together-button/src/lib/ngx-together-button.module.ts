@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NgxTogetherButtonComponent } from './ngx-together-button.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -9,6 +10,7 @@ import { NgxTogetherLanguageTranslatorPipe, NgxTogetherTranslatorModule } from '
     NgxTogetherButtonComponent
   ],
   imports: [
+    CommonModule,
     MatProgressSpinnerModule,
     NgxTogetherTranslatorModule
   ],
