@@ -1,0 +1,11 @@
+<button class="{{className}} upper-case"
+    type="submit"
+    (click)="click()"
+    style="min-width: 70px;min-height: 20px;"
+    [attr.disabled]="isWait || disabled ? true : null">
+    <ng-content></ng-content>
+    <span *ngIf="!isWait">{{label | lang}}</span>
+    <mat-spinner style="margin: auto;"
+        *ngIf="isWait"
+        diameter="20"></mat-spinner>
+</button>

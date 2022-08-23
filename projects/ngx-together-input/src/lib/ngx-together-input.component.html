@@ -18,6 +18,7 @@
         type="{{type}}"
         style="direction: initial !important;"
         data-id="{{getControlName()}}"
+        placeholder="{{ (placeholder || label) | lang }}"
         (blur)="onBlur($event)"
         [formControl]="controller"
         [patterns]="customPatterns"

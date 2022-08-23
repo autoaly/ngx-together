@@ -14,6 +14,7 @@ import { ValidationTranslatorPipe } from './pipes/validation-translator.pipe';
   exports: [
     NgxTogetherBasicComponentComponent,
     ValidationTranslatorPipe
-  ]
+  ],
+  
 })
 export class NgxTogetherBasicComponentModule { }

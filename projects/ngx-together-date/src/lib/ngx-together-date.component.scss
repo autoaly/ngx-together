@@ -1,0 +1,51 @@
+.btn-calendar{
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    max-width:fit-content; 
+    border: none;
+    background-color: transparent;
+}
+.btn-calendar-ltr{
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    max-width:fit-content; 
+    border: none;
+    background-color: transparent;
+}
+.full-with{
+    width: 100%;
+}
+.form-control {
+    border: 1px solid #ced4da !important;
+    border-radius: 2px !important;
+   color:#535763
+  
+  }
+ .ng-invalid.ng-touched {
+    border-color: red !important; 
+}
+.calendar-bg-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-height: -webkit-fill-available;
+}
+button:focus{
+    outline: none;
+}
+:host {
+
+
+    .form-group {
+        width: 100%;
+    }
+    .mat-form-field-flex {
+        .mat-form-field-infix {
+            padding: inherit !important;
+        }
+    }
+    .mat-form-field{
+        width: 100%;
+    }
+}

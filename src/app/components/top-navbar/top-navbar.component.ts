@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { LanguageTraslatorService } from 'ngx-together-translator';
+import { Utility } from 'src/app/utility/utility';
 
 @Component({
   selector: 'ngx-together-top-navbar',
@@ -60,6 +61,9 @@ export class TopNavbarComponent  implements OnInit {
 
   logout(){
     
+  }
+  isRtl(){
+    return Utility.isRtl()
   }
   
 }

@@ -26,16 +26,29 @@ export class SideNavbarmenuComponent implements OnInit {
   @ViewChild('snav') snav!: MatSidenav;
   mobileQuery!: MediaQueryList;
   fillerNav: SideMenuItems[] = [
-      // {
-      //   title: 'Translator',
-      //   url: '/translator',
-      //   icon: 'fa-solid fa-language'
-      // },
+    {
+      title: 'Translator',
+      url: '/translator',
+      icon: 'fa-solid fa-language'
+    },
     {
       title: 'Inputs',
       url: '/inputs',
       icon: 'fa-solid fa-keyboard'
-    }];
+    }
+    ,
+    {
+      title: 'Buttons',
+      url: '/button',
+      icon: 'fa-solid fa-stop'
+    }
+    ,
+    {
+      title: 'Dates',
+      url: '/date',
+      icon: 'fa-solid fa-calendar'
+    }
+  ];
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');

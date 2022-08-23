@@ -1,0 +1,55 @@
+<h3 class="mt-3">
+    <ngx-together-label label="Appearance of Dates"></ngx-together-label>
+</h3>
+<hr>
+<div class="row">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+
+        <ngx-together-date label="outline"
+            appearance="outline"
+            [controller]="getCtrl('date')">
+        </ngx-together-date>
+
+
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-date label="legacy"
+            appearance="legacy"
+            [controller]="getCtrl('date')">
+        </ngx-together-date>
+
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-date label="standard"
+            appearance="standard"
+            [controller]="getCtrl('date')">
+        </ngx-together-date>
+
+
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-date label="fill"
+            appearance="fill"
+            [controller]="getCtrl('date')">
+        </ngx-together-date>
+    </div>
+</div>
+
+<h3 class="mt-3">
+    <ngx-together-label label="Tips and Validation"></ngx-together-label>
+</h3>
+<hr>
+<div class="row">
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-date label="required"
+            tip="this is a tip to  help user"
+            [controller]="getCtrl('required')">
+        </ngx-together-date>
+    </div>
+    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ">
+        <ngx-together-date label="required"
+            tip=" required field"
+            [controller]="getCtrl('required')">
+        </ngx-together-date>
+    </div>
+</div>

@@ -229,6 +229,68 @@
           }
         }
       }
+    },
+    "ngx-together-button": {
+      "projectType": "library",
+      "root": "projects/ngx-together-button",
+      "sourceRoot": "projects/ngx-together-button/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-together-button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-together-button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-together-button/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-together-button/src/test.ts",
+            "tsConfig": "projects/ngx-together-button/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-together-button/karma.conf.js"
+          }
+        }
+      }
+    },
+    "ngx-together-date": {
+      "projectType": "library",
+      "root": "projects/ngx-together-date",
+      "sourceRoot": "projects/ngx-together-date/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-together-date/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-together-date/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-together-date/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-together-date/src/test.ts",
+            "tsConfig": "projects/ngx-together-date/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-together-date/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "cli": {

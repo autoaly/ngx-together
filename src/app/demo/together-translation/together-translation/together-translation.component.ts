@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Utility } from 'src/app/utility/utility';
 
 @Component({
   selector: 'ngx-together-together-translation',
@@ -11,5 +12,8 @@ export class TogetherTranslationComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+
 
 }
