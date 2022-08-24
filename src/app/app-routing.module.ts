@@ -3,6 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path:'**',
+    loadChildren: () => import('./demo/together-input-samples/together-input-samples.module').then(m => m.TogetherInputSamplesModule),
+    title: 'Inputs'
+  },
+  {
     path: 'inputs',
     loadChildren: () => import('./demo/together-input-samples/together-input-samples.module').then(m => m.TogetherInputSamplesModule),
     title: 'Inputs'
