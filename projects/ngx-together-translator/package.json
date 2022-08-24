@@ -7,5 +7,29 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "module": "fesm2015/ngx-together-input.mjs",
+  "es2020": "fesm2020/ngx-together-input.mjs",
+  "esm2020": "esm2020/ngx-together-input.mjs",
+  "fesm2020": "fesm2020/ngx-together-input.mjs",
+  "fesm2015": "fesm2015/ngx-together-input.mjs",
+  "typings": "index.d.ts",
+  "sideEffects": false,
+  "description": "The sources for this package are in the main  repo. Please file issues and pull requests against that repo.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autoaly/ngx-together.git"
+  },
+  "keywords": [
+    "Angular",
+    "Input",
+    "Translate"
+  ],
+  "author": "Ali Mirzaie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/autoaly/ngx-together/issues"
+  },
+  "homepage": "https://github.com/autoaly/ngx-together#readme"
 }
